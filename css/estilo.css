@@ -10,4 +10,18 @@
     --cor-clara:#fff;
     --cor-intermediaria:#ececec;
 }
-html{font-size: 16;}
+html{font-size: 16px;}
+
+body{
+    color:var(--cor-texto);
+    font-family: 'Noto Sans',sans-serif;
+    background-color: var(--cor-clara);
+}
+body,h1,h2,p,figure,.menu{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width:100%;
+}
