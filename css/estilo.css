@@ -107,3 +107,13 @@ nav a:focus,.menu a:focus,.menu a:hover {
     left: 0;
     right:0 ;
 }
+.destaque{
+    
+    height: 500px;
+    background-image:url(../imagens/fundo-destaque.jpg);
+
+}
+.destaque h2 p{
+    align-items: center;
+    color: var(--cor-clara);
+}
