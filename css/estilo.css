@@ -1,51 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:ital,wght@0,700;1,800&display=swap');
 
-*{box-sizing: border-box;}
-
-:root{
-    /* variáveis para a paleta de cores */
-    --cor-titulo:#4d4d4d;
-    --cor-texto:#333;
-    --cor-escura:#000;
-    --cor-clara:#fff;
-    --cor-intermediaria:#ececec;
+* {
+    box-sizing: border-box;
 }
-html{font-size: 16px;}
 
-body{
-    color:var(--cor-texto);
-    font-family: 'Noto Sans',sans-serif;
+:root {
+    /* variáveis para a paleta de cores */
+    --cor-titulo: #4d4d4d;
+    --cor-texto: #333;
+    --cor-escura: #000;
+    --cor-clara: #fff;
+    --cor-intermediaria: #ececec;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: var(--cor-texto);
+    font-family: 'Noto Sans', sans-serif;
     background-color: var(--cor-clara);
 }
-body,h1,h2,p,figure,.menu{
+
+body,
+h1,
+h2,
+p,
+figure,
+.menu {
     margin: 0;
     padding: 0;
 }
 
-img{
-    max-width:100%;
+img {
+    max-width: 100%;
 }
-h1{
-    font-family: Raleway,sans-serif;
-    text-transform:uppercase ;
+
+h1 {
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
     font-weight: 800;
-    font-size:1.5rem ;
+    font-size: 1.5rem;
 }
 
 h1 a {
 
-color: var(--cor-clara);
-background-color: var(--cor-escura);
-padding: 0.3rem 1rem;
-border-radius: 4px;
+    color: var(--cor-clara);
+    background-color: var(--cor-escura);
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
 }
-a{text-decoration: none;}
 
-header{
+a {
+    text-decoration: none;
+}
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu{
+
+nav h2 a {
+    color: var(--cor-escura);
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+
+}
+
+nav h2 a:hover,
+nav a:focus,.menu a:focus,.menu a:hover {
+    background-color: var(--cor-intermediaria);
+}
+
+.menu {
     list-style: none;
+}
+
+/* Regra para formatar links contidos  na lista */
+.menu a {
+    color: var(--cor-escura);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
