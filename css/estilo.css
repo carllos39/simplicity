@@ -104,6 +104,6 @@ nav a:focus,.menu a:focus,.menu a:hover {
 
     position: absolute;
     /* Aplicamos um fundo  á  lista evitando  a dificuldade  de leitura  dos links */
-    left: ;
-    right: ;
+    left: 0;
+    right:0 ;
 }
