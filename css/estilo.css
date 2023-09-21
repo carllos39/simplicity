@@ -111,10 +111,13 @@ nav a:focus,.menu a:focus,.menu a:hover {
     
     height: 500px;
     background-image:url(../imagens/fundo-destaque.jpg);
-
+    background-attachment: fixed;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
 }
-.destaque h2, p {
+.destaque h2, .destaque p {
     text-align: center;
-    height: 50%;
     color: var(--cor-clara);
 }
