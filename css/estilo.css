@@ -146,3 +146,25 @@ to{opacity: 1;
 }
 
 }
+
+article h2{
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: Raleway,sans-serif;
+    color: var(--cor-titulo);
+}
+
+.front-end,.historia,.localizacao {
+    text-align: center;
+
+}
+article p{
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+abbr{
+    text-decoration:none;
+}
+address{
+    font-style: normal;
+}
