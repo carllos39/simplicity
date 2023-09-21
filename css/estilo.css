@@ -72,14 +72,17 @@ nav h2 a {
 }
 
 nav h2 a:hover,
-nav a:focus,.menu a:focus,.menu a:hover {
+nav a:focus,
+.menu a:focus,
+.menu a:hover {
     background-color: var(--cor-intermediaria);
 }
+
 /* Regra de lista ul */
 .menu {
     list-style: none;
     /* Usamos display none  para não exibir a lista  de links */
-    display:none ;
+    display: none;
 }
 
 /* Regra para formatar links contidos  na lista */
@@ -92,7 +95,7 @@ nav a:focus,.menu a:focus,.menu a:hover {
     height: 50px;
 }
 
-.menu.aberto{
+.menu.aberto {
     /* Seletor de classes combinadas 
     Esta regra  somente  irá  funcionar  quando  As duas classes  estiverem  aplicadas  juntas   no elemento  html no caso ,n a lista  de menu /links. 
     obs esta combinação sera possivesl  por meio  de manipulação programado co J\avaScript*/
@@ -106,19 +109,22 @@ nav a:focus,.menu a:focus,.menu a:hover {
     position: absolute;
     /* Aplicamos um fundo  á  lista evitando  a dificuldade  de leitura  dos links */
     left: 0;
-    right:0 ;
+    right: 0;
 }
-.destaque{
-    
+
+.destaque {
+
     height: 88vh;
-    background-image:url(../imagens/fundo-destaque.jpg);
+    background-image: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.destaque h2, .destaque p {
+
+.destaque h2,
+.destaque p {
     text-align: center;
     color: var(--cor-clara);
 
@@ -126,45 +132,91 @@ nav a:focus,.menu a:focus,.menu a:hover {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
 }
-.destaque h2{
+
+.destaque h2 {
     /* Função clamp(tamanho mínimo,
                       tamanho ideal,
                       tamanho maximo */
-    font-size: clamp(3rem ,10vw,7rem);
-  
+    font-size: clamp(3rem, 10vw, 7rem);
+
 }
-.destaque p{
-    font-size: clamp(1.5rem,3vw,3rem);
+
+.destaque p {
+    font-size: clamp(1.5rem, 3vw, 3rem);
 }
+
 /* Animação */
 @keyframes animaDestaque {
-from{opacity: 0;
-    transform:translateY(-500px) ;
-} 
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
 
-to{opacity: 1;
+    to {
+        opacity: 1;
+    }
+
 }
 
-}
-
-article h2{
+article h2 {
     padding: 1rem;
     font-size: 2rem;
-    font-family: Raleway,sans-serif;
+    font-family: Raleway, sans-serif;
     color: var(--cor-titulo);
 }
 
-.front-end,.historia,.localizacao {
+.front-end,
+.historia,
+.localizacao {
     text-align: center;
 
 }
-article p{
+
+article p {
     padding: 0.5rem 0;
     font-size: 1.2rem;
 }
-abbr{
-    text-decoration:none;
+
+abbr {
+    text-decoration: none;
 }
-address{
+
+address {
     font-style: normal;
+}
+
+.historia { 
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+}
+.historia h2{
+    color: var(--cor-clara);
+    text-shadow: red 3px 3px 10px;
+}
+
+.historia iframe {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.localizacao iframe {
+    width: 100%;
+    margin-top:  2rem;
+}
+
+.limitador {
+    width: 95vw;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
 }
