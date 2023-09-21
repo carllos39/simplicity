@@ -38,7 +38,7 @@ img {
 }
 
 h1 {
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 1.5rem;
@@ -78,7 +78,7 @@ nav a:focus,.menu a:focus,.menu a:hover {
 .menu {
     list-style: none;
     /* Usamos display none  para não exibir a lista  de links */
-    display: none;
+    display:none ;
 }
 
 /* Regra para formatar links contidos  na lista */
@@ -113,7 +113,8 @@ nav a:focus,.menu a:focus,.menu a:hover {
     background-image:url(../imagens/fundo-destaque.jpg);
 
 }
-.destaque h2 p{
-    align-items: center;
+.destaque h2, p {
+    text-align: center;
+    height: 50%;
     color: var(--cor-clara);
 }
