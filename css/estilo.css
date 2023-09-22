@@ -191,11 +191,6 @@ address {
 }
 .historia h2{
     color: var(--cor-clara);
-<<<<<<< HEAD
-    display: flex;
-    justify-content:center;
-}
-=======
     text-shadow: red 3px 3px 10px;
 }
 
@@ -225,4 +220,3 @@ footer {
     font-weight: bold;
     text-align: center;
 }
->>>>>>> bfcd9bc52e0e2eb6f3129ac2140284c47d1d322a
