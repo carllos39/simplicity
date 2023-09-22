@@ -117,4 +117,6 @@ nav a:focus,.menu a:focus,.menu a:hover {
     text-align: center;
     height: 50%;
     color: var(--cor-clara);
+    display: flex;
+    justify-content:center;
 }
