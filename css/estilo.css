@@ -55,7 +55,7 @@ h1 a {
 a {
     text-decoration: none;
 }
-header.limitador{
+header .limitador{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -225,4 +225,34 @@ footer {
     align-items: center;
     font-weight: bold;
     text-align: center;
+}
+
+@media  (min-width:570px) {
+   nav h2 {
+    display: none;
+   
+    }
+    .menu{
+        display: flex;
+    
+    }
+ .menu    li  {
+        width: 100%;
+    }
+    nav{
+        width: 70%;
+    }
+    .front-end{
+        max-width:200px ;
+    }
+    
+}
+
+@media  (min-width:900px) {
+    .limitador{  
+ max-width: 1000px;  
+    } 
+    body{
+        font-size: 18rem;
+    }
 }
