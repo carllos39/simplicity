@@ -229,6 +229,19 @@ footer {
     text-align: center;
 }
 
+/* Regras para as página  */
+.conteudo{
+    background-color: var(--cor-intermediaria);
+    padding: 0,5rem;
+    border-radius: 8px;
+}
+.conteudo h2{
+    padding-left: 0;
+    font-size: 1.8rem;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+}
+
 @media (min-width:570px) {
     nav h2 {
         display: none;
