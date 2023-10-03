@@ -280,7 +280,7 @@ td:last-child::before{
     position: absolute;
     left: 10px;
 }
-.conteudo h2::before{content: 🤢;}
+.conteudo h2::before {content: "🤢";}
 
 
 .galeria {
