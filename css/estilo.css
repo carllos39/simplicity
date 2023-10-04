@@ -300,6 +300,41 @@ em xvez de aplicar no "img" .Desta forma ,o acio,namento funcionará  tanto com 
     border-radius: 10%;
     filter: none;
 }
+/* formatação do formulário */
+form{
+    max-width: 500px;
+    margin: auto;
+    
+}
+input, select,textarea {
+    border:none;
+    padding: 4px;
+    height: 40px;
+    border-radius: 4px;
+
+}
+textarea{
+    height: auto;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 30%;
+}
+/* Pseudo classe :not  permite  criar exceções para uma regera .
+Neste exesmplo ,estamos aplicando 70% 
+de largura para tudo (*) dentro do form div Exceto  label.*/
+
+form div *:not(label) {
+    width: 70%;
+}
 
 
 @media (min-width:570px) {
