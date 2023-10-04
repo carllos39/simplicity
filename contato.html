@@ -59,6 +59,23 @@
                     <input type="tel" name="telefone" id="telefone">
                 </div>
 
+                <div>
+                    <label for="assunto"> Assunto:</label>
+                    <!-- Deixe um option vazio de proposito -->
+                    <select name="assunto" id="assunto">
+                        <option value=""></option>
+                        <option>Dúvidas</option>
+                        <option>Elogios</option>
+                        <option>Reclamação</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem :</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Enviar dados:</button>
             </form>
 
         </article>
