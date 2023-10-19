@@ -349,6 +349,12 @@ button:hover,button:focus {
     color: var(--cor-escura);
     box-shadow: var(--cor-escura) 0 0 2px;
 }
+#cep{width:60%;
+}
+#buscar{
+    width: 39%;
+    padding: 12px;
+}
 
 
 @media (min-width:570px) {
