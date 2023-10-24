@@ -9,13 +9,19 @@ const campoEstado = formulario.querySelector("#estado");
 const botaoBuscar = formulario.querySelector("#buscar");
 const mensagem = formulario.querySelector("#status");
 
+//Seleção do campo telefone
+//const campoTelefone=formulario.querySelector("#telefone");
+ const campoTelefone=$("#telefone");
+$(campoTelefone).mask("(00) 0000-0000");
+$(campoCep).mask("00000-000");
+
 //Detectar o evento de click
 botaoBuscar.addEventListener("click", async function (event) {
     event.preventDefault();
     // Verificando se o cep não tem 8 digitos
     let cep;
 
-    if (campoCep.value.length !== 8) {
+    if (campoCep.value.length !== 9) {
         mensagem.textContent = "Digite um cep válido!";
         mensagem.style.color = "purple";
         
