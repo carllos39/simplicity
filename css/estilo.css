@@ -355,6 +355,7 @@ button:hover,button:focus {
     width: 39%;
     padding: 12px;
 }
+#status{font-size: 12px;}
 
 
 @media (min-width:570px) {
